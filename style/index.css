@@ -1,4 +1,5 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html, body, div, span, applet, object, iframe,  
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
@@ -28,12 +29,15 @@ vertical-align: baseline;
 }   
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
+	font-family: 'Raleway',
+	sans-serif;
 }
 
 h1 {
 	font-size: 7rem;
 	text-align: center;
+	color: #c9c9c9;
 }
 
 header {
@@ -41,37 +45,103 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 70%;
-	margin-left: 15%;
+	width: 100%;
+	background-color: #454545;
 
 }
 
 .topNav {
 	display: flex;
 	flex-direction: row;
-	font-size: 3rem;
+	font-size: 2rem;
 	justify-content: space-evenly;
+	margin-top: 2%;
+	
+
 }
 
-.home .about .contact .projects {
+.home, .about, .contact, .projects {
+	padding: 2%;
+	border: #c9c9c9 solid 2px;
+	margin: 2%;
+	background-color: #9a9b9c;
 	
+
 }
+
+.home:link, .home:visited {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+.about:link, .about:visited {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+.contact:link, .contact:visited {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+.projects:link, .projects:visited {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+
 
 h2 {
 	font-size: 4rem;
+	margin: 2%;
+	color: #c9c9c9;
 }
 
 .intro {
 	font-size: 1.5rem;
+	margin: 2%;
+	color: #c9c9c9;
+	text-align: center;
+	
+}
+
+.middleImage {
+	height: 80vh;
 }
 
 .middleContent {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	background-color: #454545;
 }
 
-.projects {
+.projectImages {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 60vh;
+	
 }
+.projectText {
+	display: flex;
+	text-align: center;
+	align-items: flex-end;
+	padding: 5%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #606161;
+	
+}
+
+.bottomNav {
+	display: flex;
+	flex-direction: row;
+	font-size: 2rem;
+	justify-content: space-evenly;
+	margin-top: 2%;
+
+}
+
+
